@@ -27,8 +27,9 @@ class MainClass {
 		sp("Feeding into compiler...", options[choice]);
 		Console.ResetColor();
 		Console.ForegroundColor = ConsoleColor.Blue;
-		sp("Put text here.", options[choice]);
-	  
+		sp("Compiled into GCC!", options[choice]);
+		Thread.Sleep(2000);
+	  Console.Clear();
   }
 
 	public static void sp(string text, float waitTime) {
