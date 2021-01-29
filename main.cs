@@ -26,10 +26,19 @@ class MainClass {
 		Console.ForegroundColor = ConsoleColor.Green;
 		sp("Feeding into compiler...", options[choice]);
 		Console.ResetColor();
+		Thread.Sleep(5000);
 		Console.ForegroundColor = ConsoleColor.Blue;
 		sp("Compiled into GCC!", options[choice]);
 		Thread.Sleep(2000);
 	  Console.Clear();
+		Console.ResetColor();
+		Console.ForegroundColor = ConsoleColor.Red;
+		sp(name + " was playing at school during lunchtime when there was a huge flash of light. ", options[choice]);
+		Thread.Sleep(500);
+		sp("When " + name + " regained his sight, he saw that every other kid on the playground was gone. Even the teachers. In fact, everyone was. ", options[choice]);
+		Thread.Sleep(2000);
+		Console.Clear();
+		sp(name + " then went into his classroom. There was no one there. Everyone's stuff was there though. " + name + " then skimmed everyones book and notebooks. Everything was normal with them. Then " + name + " saw the teachers computer.", options[choice]);
   }
 
 	public static void sp(string text, float waitTime) {
