@@ -26,6 +26,13 @@ class MainClass {
 		Console.ForegroundColor = ConsoleColor.Green;
 		sp("Feeding into compiler...", options[choice]);
 		Console.ResetColor();
+	// Console.GCC.Feed(3.1.0)::DOC.GET.GCC::ID == GccCompile
+	// if (GccCompile in GCC.3.1.0) {
+	//		pass
+	// }
+	// else {
+	//		Throw.GCC.Error
+	// }
 		Thread.Sleep(5000);
 		Console.ForegroundColor = ConsoleColor.Blue;
 		sp("Compiled into GCC!", options[choice]);
@@ -39,6 +46,28 @@ class MainClass {
 		Thread.Sleep(2000);
 		Console.Clear();
 		sp(name + " then went into his classroom. There was no one there. Everyone's stuff was there though. " + name + " then skimmed everyones book and notebooks. Everything was normal with them. Then " + name + " saw the teachers computer.", options[choice]);
+		Thread.Sleep(2000);
+		Console.Clear();
+		sp(name + " opened the computer to find that it required a password. " + name + " knew that every teacher is required somewhere. So he got looking.", options[choice]);
+		Thread.Sleep(2000);
+		Console.Clear();
+		while (true) {
+			sp("Find the code!", options[choice]);
+			Console.ForegroundColor = ConsoleColor.Blue;
+			Console.WriteLine("[1]: Drawer");
+			Console.WriteLine("[2]: Box");
+			Console.WriteLine("[3]: Computer");
+			Console.WriteLine("[4]: Notebook");
+			Console.WriteLine("[5]: Planner");
+			Console.Write("> ");
+			Console.ForegroundColr = ConsoleColor.White;
+			string input = Console.ReadLine();
+			if (input == "1") {
+				Console.ForegroundColor = ConsoleColor.Red;
+				sp("", options[choice]);
+				
+			}
+		}
   }
 
 	public static void sp(string text, float waitTime) {
