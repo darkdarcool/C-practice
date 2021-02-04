@@ -26,13 +26,21 @@ class MainClass {
 		Console.ForegroundColor = ConsoleColor.Green;
 		sp("Feeding into compiler...", options[choice]);
 		Console.ResetColor();
-	// Console.GCC.Feed(3.1.0)::DOC.GET.GCC::ID == GccCompile
-	// if (GccCompile in GCC.3.1.0) {
-	//		pass
-	// }
-	// else {
-	//		Throw.GCC.Error
-	// }
+		/*
+	  Console.GCC.Feed(3.1.0)::DOC.GET.GCC::ID == GccCompile
+	  if (GccCompile in GCC.3.1.0) {
+			pass
+	  }
+	  else {
+			Throw.GCC.Error
+	  }
+		if (GccCompile in.data.GCC) {
+			Throw.gcc.new.date:: >> main.exe
+		}
+		else {
+			Throw.GCC.Error
+		}
+		*/
 		Thread.Sleep(5000);
 		Console.ForegroundColor = ConsoleColor.Blue;
 		sp("Compiled into GCC!", options[choice]);
@@ -64,7 +72,7 @@ class MainClass {
 			string input = Console.ReadLine();
 			if (input == "1") {
 				Console.ForegroundColor = ConsoleColor.Red;
-				sp("", options[choice]);
+				sp("You chack the drawer.", options[choice]);
 				
 			}
 		}
